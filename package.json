@@ -1,0 +1,21 @@
+{
+  "name": "demoproject",
+  "version": "1.0.0",
+  "description": "testcode",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^3.1.0",
+    "jasmine-data-provider": "2.2.0",
+    "protractor": "^5.3.2",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "requirejs": "^2.3.5"
+  },
+  "scripts": {
+    "update": "./node_modules/.bin/webdriver-manager update",
+    "start": "./node_modules/.bin/webdriver-manager start",
+    "test": "./node_modules/.bin/protractor conf.js",
+    "startAll": "npm run update &&npm run start &&npm run test"
+  },
+  "author": "omilka",
+  "license": "ISC"
+}
