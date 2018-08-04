@@ -9,7 +9,7 @@ exports.config = {
     specs: ['tests/homePageSpec.js'],
 
    onPrepare: function(){
-      browser.driver.manage().window().maximize();
+     // browser.driver.manage().window().maximize();
 
         jasmine.getEnv().addReporter(
           new Jasmine2HtmlReporter({
