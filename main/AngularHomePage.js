@@ -1,7 +1,10 @@
 var AngularHomepage = function()
 
     {
-        var nameInput = element(by.css("input[name='name'][minlength='2']"));
+
+        var SearchInput = element(by.css("input[id='search-box']"));
+
+       // var nameInput = element(by.css("input[name='name'][minlength='2']"));
         var emailInput = element(by.name('email'));
         var passwordInput = element(by.id('exampleInputPassword1'));
         var IceCreamCheckBox=element(by.css("input[id='exampleCheck1']"));
@@ -11,11 +14,12 @@ var AngularHomepage = function()
     
       
         this.get = function() {
-          browser.get('https://qaclickacademy.github.io/protocommerce/');
+          browser.get('http://localhost:4200/dashboard');
         };
       
-        this.setName = function(name) {
-          nameInput.sendKeys(name);
+        this.setSearch = function(search) {
+            SearchInput.sendKeys(search);
+           
         };
       
         this.setEmail = function(email) {
